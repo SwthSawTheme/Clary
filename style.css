@@ -1,0 +1,112 @@
+/* Estilo para o body */
+body {
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px; /* Adiciona espaço para telas menores */
+    box-sizing: border-box;
+}
+
+/* Estilo para o h1 */
+h1 {
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: fadeIn 3s ease-in-out;
+    margin: 0;
+}
+
+/* Estilo para o parágrafo */
+p {
+    color: #ff6666;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+    animation: slideUp 2s ease-in-out;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação de slide-up */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para hover no h1 */
+h1:hover {
+    color: #ff3333;
+    animation: pulse 1s infinite;
+}
+
+/* Animação de pulso */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilo responsivo para telas menores que 1024px */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+}
+
+/* Estilo responsivo para tablets (telas menores que 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Estilo responsivo para celulares (telas menores que 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    body {
+        padding: 10px; /* Ajuste do espaçamento para telas muito pequenas */
+    }
+}
